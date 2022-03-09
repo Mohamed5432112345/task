@@ -1,0 +1,103 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+ font-family: sans-serif;   
+}
+.parent {
+    background-color: #2F4F4F;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .content-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 75%;
+}
+.parent .content-item .item {
+    background-color: #262626;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 5px 5px 20px;
+    text-align: center;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
+.parent .content-item .item:hover {
+    background-color: #800001;
+    transform: perspective(500px) translateZ(50px);
+    -webkit-transform: perspective(500px) translateZ(50px);
+    -moz-transform: perspective(500px) translateZ(50px);
+    -ms-transform: perspective(500px) translateZ(50px);
+    -o-transform: perspective(500px) translateZ(50px);
+}
+.parent .content-item .item h2 {
+    color: #FAE5A1;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 40px 20px;
+}
+.parent .content-item .item .price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FAE5A1;
+    /* padding: 19px;
+    padding: 12px; */
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 2px solid #800001;
+    white-space: nowrap;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.parent .content-item .item:hover .price {
+    border-color:  #FAE5A1;
+}
+.parent .content-item .item .option {
+    margin: 15px;
+    padding: 13px;
+    font-size: 13px;
+    color:#E7DDA4;
+    position: relative
+}
+.parent .content-item .item .option:not(:last-of-type):before {
+    content: "";
+    position: absolute;
+    left: 22.5%;
+    width: 55%;
+    bottom: -13px;
+    height: 1px;
+    background-color: #FAE5A1;
+}
+input {
+    width: 76%;
+    padding: 7px 12px;
+    background: #800001;
+    border: none;
+    margin: 30px;
+    color: wheat;
+    text-transform: uppercase;
+}
+.parent .content-item .item:hover input {
+    background:#262626 ;
+}
+
