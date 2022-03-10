@@ -37,9 +37,9 @@ body {
     background-color: #800001;
     transform: perspective(500px) translateZ(50px);
     -webkit-transform: perspective(50px) translateZ(5px);
-    -moz-transform: perspective(500px) translateZ(50px);
-    -ms-transform: perspective(500px) translateZ(50px);
-    -o-transform: perspective(500px) translateZ(50px);
+    -moz-transform: perspective(50px) translateZ(5px);
+    -ms-transform: perspective(50px) translateZ(5px);
+    -o-transform: perspective(50px) translateZ(5px);
 }
 .parent .content-item .item h2 {
     color: #FAE5A1;
